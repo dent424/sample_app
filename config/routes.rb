@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
   root to: 'static_pages#home'
+  match '/signup', to: 'users#new'
   match '/help', to: 'static_pages#help'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
@@ -15,7 +16,6 @@ SampleApp::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
   # Sample resource route with options:

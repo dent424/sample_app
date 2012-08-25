@@ -15,7 +15,7 @@ describe "Static Pages" do
   		end
 
   		it "should not have a custom page title" do
-  			visit visit root_path
+  			visit root_path
   			page.should_not have_selector('title', :text => '| Home')
   		end		
   	end
